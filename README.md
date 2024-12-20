@@ -1,8 +1,8 @@
-# TECH-CHALLENGE-FRONTEND
+# Front-Blog-for-School
 
-Tech Challenge Frontend é uma interface gráfica em React desenvolvida como atividade que integra os conhecimentos adquiridos durante o módulo de Frontend, Fase 3 da Pós Tech FIAP Full Stack Development, do Grupo 1, Turma 2FSDT.
+Tech Challenge Frontend is a graphical interface in React developed as an activity that integrates the knowledge acquired during the Frontend module, Phase 3 of the Post Tech FIAP Full Stack Development, Group 1, Class 2FSDT.
 
-Membros do grupo 1 - 2FSDT:
+Members of group 1 - 2FSDT:
 
 - RM: 357717 Cristiano Gomes da Rocha,
 - RM: 357154 Diego da Silva Gervasio,
@@ -10,35 +10,36 @@ Membros do grupo 1 - 2FSDT:
 - RM: 356535 João Vitor dos Santos Correa,
 - RM: 357920 Marcos Alberto Herrera Bordalo.
 
-## Objetivo
+## Goal
 
-O objetivo desta interface gráfica é fornecer uma aplicação blogging robusta, responsiva, acessível e fácil de usar, permitindo aos docentes e alunos(as) interagir e gerenciar postagens de blog por meio de operações de criação, edição, deleção e listagens de post, utilizando login de autenticação e assim facilitando a gestão de conteúdo par os autores e administradores.
-
----
-
-## Video de apresentação
-
-[Link do video de apresentação](https://drive.google.com/file/d/17Qe8B81myaIwwkWmZV0VruY_SG76iepM/view?usp=drive_link)
+The goal of this graphical interface is to provide a robust, responsive, accessible and easy-to-use blogging application, allowing faculty and students to interact and manage blog posts through post creation, editing, deletion and listing operations, using authentication login and thus facilitating content management for authors and administrators.
 
 ---
 
-## Tecnologias utilizadas no frontend
+## Presentation video
+
+[Introduction video link](https://drive.google.com/file/d/17Qe8B81myaIwwkWmZV0VruY_SG76iepM/view?usp=drive_link)
+
+---
+
+## Technologies used in the frontend
 
 - React
 - Axios
 - Tailwind
 - Tanstack
 - Docker
+- Vercel
 
 ---
 
-## Instalação da aplicação
+## Application installation
 
-Este projeto está pronto para ser executado em um ambiente Docker. Por este motivo, será necessária apenas a instalação do Docker, não sendo necessária a instalação manual do projeto.
+This project is ready to run in a Docker environment. For this reason, only the installation of Docker will be required, and the manual installation of the project will not be necessary.
 
-Caso não tenha o Docker instalado, siga as instruções para seu sistema operacional na [documentação oficial do Docker](https://docs.docker.com/get-started/get-docker/).
+If you do not have Docker installed, follow the instructions for your operating system in the [official Docker documentation](https://docs.docker.com/get-started/get-docker/).
 
-- Subir a aplicação utilizando Docker:
+- use local application with Docker:
 
 ```bash
 docker-compose up --build
@@ -46,7 +47,7 @@ docker-compose up --build
 
 ---
 
-## Usúario de testes
+## Test User
 
 ```bash
 user: professor@fiap.com
@@ -55,75 +56,75 @@ key: password1234
 
 ---
 
-## Telas da aplicação
+## Application Screens
 
-Tela 1: Home - Listagem de Posts
+Screen 1: Home - Listing of Posts
 
-- Exibe uma lista de posts disponíveis limitado a 6 posts por página,
-- Permite que todos usuários naveguem para as páginas de visualização de um post,
-- Permite que todos usuários façam a busca de um post pelo campo de busca,
-- Permite que o administrador faça login.
+- Displays a list of available posts limited to 6 posts per page,
+- Allows all users to navigate to the preview pages of a post,
+- Allows all users to search for a post through the search field,
+- Allows the administrator to log in.
 
 ![Home](public/assets/images/home.png)
 
-Tela 2: Login – Professor
+Screen 2: Login – Teacher
 
-- Exibe o formulário para o professor fazer a autenticação e gestão do conteúdo.
+- Displays the form for the teacher to authenticate and manage the content.
 
 ![Login](public/assets/images/login.png)
 
-Tela 3: Página de administração
+Screen 3: Admin Page
 
-- Exibe o conteúdo detalhado de um post selecionado,
-- Oferece opções para criação, edição ou exclusão de um post somente para professores logados,
-- Oferece opçãoa de logout para o professor que estiver logado.
+- Displays the detailed content of a selected post,
+- Provides options for creating, editing, or deleting a post for logged-in teachers only,
+- Offers the option to log out for the teacher who is logged in.
 
 ![CRUD](public/assets/images/crud.png)
 
-Tela 4: Criação de Post
+Screen 4: Post Creation
 
-- Permite que o professor crie um novo post, inserindo título, conteúdo, imagem  e outras informações relevantes.
+- Allows the teacher to create a new post, inserting title, content, image and other relevant information.
 
 ![Create](public/assets/images/create.png)
 
-Tela 5: Edição de Post
+Screen 5: Post Editing
 
-- Permite que o professor edite um post existente.
+- Allows the teacher to edit an existing post.
 
 ![Edit/Update](public/assets/images/edit.png)
 
-Tela 6: Exclusão de Post
+Screen 6: Post Deletion
 
-- Permite que o professor exclua um post existente.
+- Allows the teacher to delete an existing post.
 
 ![Delete](public/assets/images/delete.png)
 
 ---
 
-## Back-End utilizado
+## Back-End Used
 
-Este repositório contém a implementação do back-end do **Tech Challenge 2** com algumas adaptações.
+This repository contains the implementation of Back-End-Blogger-Fiap.
 
-O sistema está em produção e foi desenvolvido com base nas especificações fornecidas, utilizando o front-end do **Tech Challenge 3**
+The system is in production and has been developed based on the specifications provided, using the front-end of ![back-end-blogger-fiap](https://github.com/diegox300/Back-End-Blogger-Fiap)
 
-A API está totalmente documentada usando o Swagger. Você pode acessar a documentação interativa da API através do seguinte link:
+The API is fully documented using Swagger. You can access the API's interactive documentation via the following link:
 
-[Documentação da API (Swagger)](https://tech-challenge-back-end.vercel.app/api-docs#/)
+[API Documentation (Swagger)](https://tech-challenge-back-end.vercel.app/api-docs#/)
 
-### Tecnologias utilizadas no backend
+### Technologies used in the backend
 
-- Linguagem: Node.js
+- Language: Node.js
 - Framework: Express
-- Banco de Dados:  MongoDB
-- Documentação: Swagger
+- Database: MongoDB
+- Documentation: Swagger
 - Deploy: Vercel
 
 ---
 
-## Relato de experiências e desafios
+## Report of experiences and challenges
 
-Desde o início, o grupo decidiu versionar o código diretamente no GitHub, o que permitiu uma organização eficiente da estrutura inicial e dos padrões do projeto. A cada etapa da implementação da interface, todos os integrantes eram notificados sobre novos Pull Requests (PRs) abertos na branch principal, garantindo a colaboração contínua e a revisão conjunta do código.
+From the beginning, the group decided to version the code directly on GitHub, which allowed for an efficient organization of the project's initial structure and standards. At each step of the interface implementation, all members were notified of new Pull Requests (PRs) opened in the main branch, ensuring continuous collaboration and joint code review.
 
-As aulas da Fase 3 foram fundamentais para o desenvolvimento do projeto, fornecendo a base necessária para avançarmos com confiança. Sempre que surgiam dúvidas ou obstáculos, reassistir as aulas ou buscar soluções na internet tornou o processo de resolução de problemas mais ágil e eficaz.
+The Phase 3 classes were instrumental in the development of the project, providing the foundation we needed to move forward with confidence. Whenever doubts or obstacles arose, rewatching classes or looking for solutions on the internet made the problem-solving process more agile and effective.
 
-Além disso, os encontros semanais de todo o grupo desempenharam um papel crucial, promovendo discussões e alinhamentos que contribuíram para o progresso contínuo e a conclusão bem-sucedida do projeto.
+In addition, the weekly group-wide meetings played a crucial role, fostering discussions and alignments that contributed to the continued progress and successful completion of the project.
